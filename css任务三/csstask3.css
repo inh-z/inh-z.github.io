@@ -1,0 +1,44 @@
+@charset "UTF-8";
+html{
+	background-color: #68cdd5;
+}
+body {font-size: 62.5%;}
+header button{
+	border: none;
+	width: 54px;
+	height: 54px;
+	background-image: url(image/task03.png);
+	background-color: #68cdd5; 
+}
+.logo{
+	width: 220px;
+	height: 70px;
+	background-image: url(image/task07.png);
+	margin: 116px auto 110px;
+	background-repeat: no-repeat;
+}
+.content p{
+	color: #ffffff;
+	font-size:3em;
+	width: 80%;
+	margin:0 auto 170px;
+}
+footer div{
+	width:50%;
+	float: left;
+	height: 336px;
+	background-repeat: no-repeat;
+	background-position-x:center; 
+}
+.first{
+	background-image: url(image/task11.png);
+}
+.second{
+	background-image: url(image/task13.png);
+}
+footer p{
+	color: #ffffff;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 100px;
+}
