@@ -1,0 +1,65 @@
+@charset "UTF-8";
+html{
+	background-color: #68cdd5;
+}
+body {font-size: 62.5%;}
+header button{
+	border: none;
+	width: 54px;
+	height: 54px;
+	background-image: url(image/task03.png);
+	background-color: #68cdd5; 
+}
+.logo{
+	width: 220px;
+	height: 70px;
+	margin: 116px auto 110px;
+	max-width: 100%;
+}
+.logo img{max-width: 100%;}
+.content p{
+	color: #ffffff;
+	font-size:3em;
+	width: 80%;
+	margin:0 auto 170px;
+}
+footer{
+	width: 80%;
+	margin:0 auto; 
+}
+footer:after{content: "";clear: both;display: block;}
+.item{height: 336px;}
+.first{float: left;}
+.second{float: right;}
+footer p{
+	color: #ffffff;
+	text-align: center;
+	font-size: 2em;
+}
+.item div{
+	width: 84px;
+	height: 84px;
+	border:solid 1px #5fc0cd;
+	border-radius: 50%;
+	background-color: #009e96;
+	margin: 0 auto;
+}
+
+footer img{
+	max-width: 100%;
+}
+/*@media screen and (max-device-width:285px){
+	.first,.second{float: none;}
+}*/
+/*遇到的问题：
+1.logo总算是自适应了，但是下边两个图片随屏幕宽度的缩小无法自适应，只会掉下去，
+设置了max-width=100%，也不起作用。
+2.设置了媒体查询，但是感觉页面缩放不属于媒体查询的范畴，我的理解是媒体查询只
+适用于移动端的屏幕固定缩放
+3.还有切图，下边两个小logo，其中一个的图层是透明的，另一个最原始的图层就是带颜色的，
+不知道是不是还是切得不对
+4.关于设置最小宽度的问题，设置了之后屏幕还是可以缩放，用的代码是min-width，
+不知道是哪里出错了
+5.还有关于max-width，对于logo，发现只是设置到图片不起作用，还要设置到包含图片的div上，
+对这种现象表示不解。
+*/
