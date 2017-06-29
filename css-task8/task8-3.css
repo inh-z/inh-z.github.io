@@ -1,0 +1,202 @@
+@charset "UTF-8";
+body{
+	background-color: #fafafa;
+}
+header{
+	width: 100%;
+	display: flex;
+	padding: 6px 0;
+}
+header p{
+	font-size: 14px;
+	color: #29b078;
+	flex:1;
+	text-align: center;
+	line-height: 24px;
+}
+span{
+	background-image: url(img/task8-1.png);
+}
+.cat1,.cat2,.cat3{
+	display: inline-block;
+	width: 25px;
+	height: 24px;
+	vertical-align: middle;
+}
+.cat1{background-position: -32px -343px;}
+.cat2{background-position: -59px -343px;}
+.cat3{background-position: -86px -343px;}
+header div{
+	flex:1;
+	text-align: center;
+}
+header button{
+	border: none;
+	background:#fff; 
+	padding: 0;
+}
+.navbar-toggle span{
+	background-image: none;
+}
+.navbar-default{
+	background-color: #29b078;
+}
+//.icon-bar{background-color: #fff;}
+.navbar{margin-bottom: 0;}
+.navbar-toggle{background-color: #fff;}
+.name{
+	color: #fff !important;
+	font-size: 16px !important;
+}
+.actives{
+	border-bottom:solid 5px #fff; 
+}
+
+.navbar-nav li:visited{border-bottom:solid 5px #fff; }
+.navbar-nav li:hover{border-bottom:solid 5px #fff; }
+.navbar-nav li:active{border-bottom:solid 5px #fff; }
+//.navbar-nav>li{float: right;}
+.first{text-align: right;}
+.second{display: inline-block;background-image: none;font-size: 24px;}
+.third{display: inline-block;}
+.special{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	color: #fff;
+}
+.navbar-brand>p{
+	position: relative;
+	top: -6px;
+	font-size: 29px;
+	color: #fff;
+}
+.navbar-brand>span{
+	background-image: none;
+	position: relative;
+	top: -8px;
+	color: #fff;
+}
+
+
+main{
+	width: 80%;
+	margin: 0 auto;
+}
+main>h1>span{
+	color: #29b078;
+	font-size: 16px;
+}
+main>h1{
+	padding: 10px 0;
+	border-bottom: solid 1px #d0d6d9;
+	padding-left: 15px;
+}
+main{
+	padding-bottom: 50px;
+}
+.top a:hover{
+	border: solid 1px #29b078;
+	background-color: #29b078;
+	color: #fff;
+	text-decoration: none;
+}
+.top{
+	padding: 10px 0;
+	border-bottom: solid 1px #d0d6d9;
+}
+main h2{
+	padding: 15px 0;
+	color: #333333;
+	padding-left: 15px;
+	border-bottom: solid 1px #d0d6d9;
+	font-weight: 800;
+	font-size: 14px;
+}
+.middle{
+	padding: 20px 0;
+}
+.text-top{display: flex;padding: 10px;border-bottom: solid 1px #d0d6d9;}
+.text-top-left{display: flex; align-items:center;margin-right:2%; }
+.text-top-left img{max-width: 100%;}
+.text-top-right{width: 54%;}
+.text-top-right p{word-wrap:break-word;}
+.text-bottom img{margin-left: 0.5em;}
+.item1,.item2,.item3,.item4{width: 50%;float: left;height: 40px;line-height: 40px;border-bottom: solid 1px #d0d6d9;padding-left: 1em;}
+.item5{width: 40%;float: left;height: 120px;line-height: 120px;text-align: center;border-bottom: solid 1px #d0d6d9;}
+.item6,.item8,.item10,.item12,.item13{padding-left: 1em;}
+.item6,.item7,.item8,.item9,.item10,.item11{height: 40px;line-height: 40px;width: 30%;float: left;border-bottom: solid 1px #d0d6d9;}
+.item12{float: left;width: 100%;height: 40px;line-height: 40px;border-bottom: solid 1px #d0d6d9; }
+.item13{float: left;width: 100%;line-height: 40px;}
+.item5{border-right: solid 1px #d0d6d9;  }
+.text-bottom:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.container-fluid{margin-top: 40px;}
+.text{border: solid 1px #d0d6d9;margin-bottom: 20px;}
+.item3 span,.item4 span,.item12 span{color: red;}
+.hoverd{width: 100%;background:rgba(61,61,61,0.5);color: #fff;position: absolute;top: 0;bottom: 0;display: flex;}
+.hoverd h2{margin: 1em 0;text-align: center;color: #fff;border: none;}
+.hoverd div{margin: auto; width: 70%;}
+.hoverd p{text-indent: 2em;}
+.text{position: relative;}
+.hoverd{display: none;}
+.text:hover .hoverd{display: flex;}
+
+
+
+
+
+footer{
+	
+	width: 100%;
+	background-color: #26a26f;
+	z-index: 999;
+	display: flex;
+	padding: 2% 10%;
+	color: #fff;
+	z-index: 999;
+}
+.items{
+	flex:1;
+	display: flex;
+	flex-direction:column; 
+}
+.acf{
+	text-align: right !important;
+}
+.acf div{
+	text-align: right !important;
+}
+footer span{
+	display: inline-block;
+	width: 92px;
+	height: 93px;
+	background-position: -507px -110px;
+	
+}
+footer p:not(.bottom){
+	flex:1;
+}
+footer div:first-child{text-align: left;}
+footer div:nth-child(2){text-align: left;}
+footer div:nth-child(3){text-align: -webkit-center;}
+//.bottom{border-top: solid 1px #32c086;}
+.bottoms{
+	
+	width: 100%;
+	border-top: solid 1px #32c086;
+	color: #fff;
+	text-align: center;
+	background-color: #26a26f;
+	z-index: 999;
+}
+@media screen and (min-width: 768px) {
+    #example-navbar-collapse ul {
+        float: right;
+        padding-right: 10%;
+    }
+}
