@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{padding: 0;margin: 0;}
+html{font-size: 62.5%;}
+
+.backgroundc(@background-color:#5fc0cd){
+	background-color: @background-color;
+}
+.pos(f){position: fixed;}
+.z-d{z-index: 1000;}
+.f-s(@size:2.5rem){font-size: @size;}
+@se:#ffffff;
+.t-a{text-align: center;}
+.flt(l){float: left;}
+.flt(r){float: right;}
+.dis(i){display: inline-block;}
+.dis(b){display: block;}
+.v-a{vertical-align: middle;}
+.backgroundi(@rode){background-image: url(@rode);}
+.w-s{white-space: nowrap;}
+
+header{
+	.backgroundc();
+	.pos(f);
+	top: 0;
+	left: 0;
+	padding: 1rem 0;
+	width: 100%;
+	.z-d;
+	a{
+		text-decoration: none;
+		.f-s(2);
+		color: @se;
+		.backgroundc();
+		width: 20%;
+		.flt(l);
+		.t-a;
+		.w-s;
+
+	}
+	p{
+		.f-s();
+		color: @se;
+		.t-a;
+		.flt(l);
+		width: 60%;
+
+	}
+}
+.content{
+	.backgroundc(#eff0f4);
+	padding-top:20px;
+	margin-top: 4.5rem;
+	div{
+		.backgroundc(@se);
+		height: 100px;
+
+	}
+	.first{
+		span{
+			.backgroundi("images/a1.png");
+	
+		}
+	}
+	.second{margin-top: 20px;
+		span{
+			.backgroundi("images/a2.png");//路径这种要用引号引起来，不然Koala报错
+		}
+	}
+	span{
+		.dis(i);
+		width: 20%;
+		height: 100px;
+		background: no-repeat center center;
+	}
+	button{
+		margin-top: 3rem;
+		.backgroundc();
+		border:none;
+		width: 100%;
+		padding: 2%;
+		color: @se;
+		.f-s(2.6);
+	}
+	input{
+		border:none;
+		border-left: solid #bababa 1px;
+		height: 54px;
+		.f-s(2);
+		outline: none;
+		padding-left: 5%;
+		width: 60%;
+	}
+	a{
+		color: #5fc0cd;
+		.f-s(2rem);
+		.flt(r);
+		margin-right: 20px;
+	}
+}
+.content input,.content span{.v-a;}
