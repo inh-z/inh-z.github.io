@@ -1,0 +1,247 @@
+@charset "UTF-8";
+*{padding: 0;margin: 0;}
+
+html{
+	font-size: 62.5%;
+}
+body{
+	width:100%;
+	max-width: 720px;
+	margin: 0 auto;
+	//font-size: 62.5%;
+}
+
+.background-color(@background-color:#5fc0cd){
+	background-color: @background-color;
+}
+.pos(f){position: fixed;}
+.pos(a){position: absolute;}
+.z-d{z-index: 1000;}
+.t-a{text-align: center;}
+.flt(l){float: left;}
+.flt(r){float: right;}
+.dis(i){display: inline-block;}
+.dis(b){display: block;}
+.dis(f){display: flex;}
+.v-a{vertical-align: middle;}
+.backgroundi(@rode){background-image: url(@rode);}
+.j-c{justify-content:center;}
+.a-i{align-items:center;}
+.o-f{overflow:hidden;}
+.f-s(@fontsize){font-size: @fontsize;}
+@se:#5fc0cd;
+.background-r{background-repeat: no-repeat;}
+.clear{content: "";clear: both;display: block;}
+.border(l,@color,@size:1px){border-left: solid @color @size;}
+.border(t,@color,@size:1px){border-top: solid @color @size;}
+.border(r,@color,@size:1px){border-right: solid @color @size;}
+.border(b,@color,@size:1px){border-bottom: solid @color @size;}
+.border(a,@color,@size:1px){border: solid @color @size;}
+
+span{
+		.backgroundi("img/script.png")
+	}
+header{
+	.pos(f);
+	top: 0;
+	width: 100%;
+	max-width: 720px;
+	padding: 14px 0;
+	.background-color();
+	.z-d;
+	button{
+		box-sizing: border-box;
+		height: 60px;
+		border: none;
+		border-radius:15px;
+		.f-s(20px);
+		cursor: pointer;
+	}
+	button:first-child{
+		width: 30%;
+		padding-right: 10%;
+		margin-left: 30%;
+		color: #fff;
+		.background-color(#55a8b3);
+	}
+	button:nth-child(2){
+		width: 20%;
+		margin-left: -12%;
+		color: @se;
+		.background-color(#fff);
+	}
+	span{
+		.dis(i);
+		width: 43px;
+		height: 44px;
+		background-position: 0 0;
+		.pos(a);
+		top: 50%;
+		transform:translate(0,-50%);
+		right: 5%;
+	}
+}
+a:link{text-align: center;}
+footer{
+	.pos(f);
+	bottom: 0;
+	.z-d;
+	height: 100px;
+	.f-s(18px);
+	.t-a;
+	.background-color(#fff);
+	width: 100%;
+	max-width: 720px;
+	span{.dis(b);}
+	div:first-child{
+		.pos(a);
+		top: 50%;
+		transform:translate(0,-50%);
+		left: 15%;
+		span{
+		background-position: -128px 0px ;
+		width: 50px;
+		height: 45px;
+		}
+		p{color: @se;}
+	}
+	div:nth-child(2){
+		.pos(a);
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		padding: 25px;
+		.border(a,@se);
+		border-radius: 50%;
+		.background-color(@se);
+		
+		span{
+		background-position: -42px 0px;
+		width: 43px;
+		height: 43px;
+		}
+	}
+	div:last-child{
+		.pos(a);
+		top: 50%;
+		transform:translate(0,-50%);
+		right: 15%;
+		span{
+		background-position: -81px 0px;
+		width: 50px;
+		height: 45px;
+		}
+		p{
+			color: #9e9e9e;
+		}
+	}
+	p{
+		margin: 0;
+	}
+}
+
+.contain {
+	margin-top: 88px;
+	margin-bottom: 100px;
+	form{
+		.dis(f);
+		padding: 2%;
+		.border(b,#e1e5e7);
+		a{
+			flex:1;
+			padding: 2%;
+		}
+		select{
+			-webkit-appearance:none;
+			background: url(img/b7.png) no-repeat scroll right center transparent;
+			padding-right: 14px; 
+			width: 100%;
+			padding-left:40%;
+			border: none;
+			outline: none;
+			margin: 7% 0;
+			color:#999;
+		}
+		a:nth-child(2){
+			.border(l,#e1e5e7);
+			.border(r,#e1e5e7);
+		}
+	}
+	li{
+		width: 100%;
+		.border(b,#e1e5e7);
+		list-style: none;
+		div:first-child{
+			.dis(i);
+			.f-s(14px);
+			color: #999999;
+			margin-left: 20px;
+			margin-top: 13px;
+			padding-left:30px;
+			.v-a;
+			span{
+				.dis(i);
+				background-position: -178px 0px ;
+				width: 24px;
+				height: 24px;
+			}
+			div{
+				.dis(i);
+				.f-s(14px);
+				color: #999;
+				margin-left: 20px;
+				.v-a;
+			}
+		}
+		div:nth-child(2){
+			height: 18px;
+			line-height: 18px;
+			.f-s(14px);
+    		overflow: hidden;
+    		text-overflow: ellipsis;
+			white-space: nowrap;
+			margin: 10px 0; 
+			div{
+				margin-left: 74px;
+				display: inline;
+				overflow: hidden;
+    			text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			span{
+				.flt(r);
+				margin-right: 10px;
+				color: red;
+			}
+		}
+		div:nth-child(3){
+			.dis(i);
+			.f-s(14px);
+			color: #999;
+			margin-left: 20px;
+			padding-left:33px;
+			margin-bottom: 13px; 
+			.v-a;
+			span{
+				.dis(i);
+				background-position: -178px -26px ;
+				width: 19px;
+				height: 23px;
+			}
+			div{
+				.dis(i);
+				.f-s(14px);
+				color: #999;
+				margin-left: 20px;
+				.v-a;
+			}
+		}
+	}
+}
+.first span , .first div{.v-a;}
+.thired span , .thired div{.v-a;}
+@media screen and (max-width: 425px){
+	select{padding-left: 23%;}
+}
+	
+
