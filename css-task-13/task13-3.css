@@ -1,0 +1,169 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+.phone {
+  max-width: 720px;
+  width: 100%;
+}
+/*position */
+/*常用样式*/
+.tac {
+  text-align: center;
+}
+.vta {
+  vertical-align: middle;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.clear {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*header*/
+header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 999;
+  max-width: 720px;
+  width: 100%;
+}
+header button {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  background-color: #29bde0;
+}
+header span {
+  background-image: url("img/task7-1.png");
+  display: inline-block;
+}
+header .lefticon {
+  left: 10px;
+}
+header .righticon {
+  right: 10px;
+}
+header p {
+  text-align: center;
+  color: #fff;
+  font-size: 3.4rem;
+}
+header span {
+  background-image: url(img/task7-3.png);
+}
+.lefticon span {
+  width: 51px;
+  height: 42px;
+  background-position: -42px 0;
+  display: block;
+}
+.righticon span {
+  width: 40px;
+  height: 44px;
+  background-position: 0 0;
+  display: block;
+}
+main {
+  margin-top: 70px;
+  background-color: #29bde0;
+  padding: 0 70px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+main img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+.text {
+  font-size: 28px;
+  color: #ffc865;
+  margin-bottom: 60px;
+  text-align: left;
+}
+.sectext p,
+.sectext li {
+  font-size: 18px;
+  text-align: left;
+}
+.sectext ul {
+  text-align: left;
+}
+.sectext li {
+  width: 30%;
+  display: inline-block;
+}
+.content {
+  padding: 0 70px;
+}
+.content div {
+  border-bottom: solid 1px #dddddd;
+}
+.detail p {
+  color: #bcbcbc;
+  font-size: 26px;
+}
+.special {
+  padding-bottom: 20px;
+}
+.lefts {
+  font-size: 30px;
+  color: #515151;
+  background-image: none;
+}
+div .detail-top {
+  border: none;
+  position: relative;
+}
+.rights {
+  font-size: 20px;
+  color: #d9d9d9;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: none;
+}
+.specials {
+  margin-bottom: 12rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  max-width: 720px;
+  width: 100%;
+  background-color: rgba(153, 223, 240, 0.5);
+}
+footer button {
+  width: 35%;
+  border: none;
+  height: 86px;
+  margin: 5%;
+}
+footer button a {
+  color: #fff;
+  font-size: 20px;
+}
+footer .btn1 {
+  margin-right: 9%;
+  background-color: #f66f6f;
+}
+footer .btn2 {
+  margin-left: 9%;
+  background-color: #fbb435;
+}

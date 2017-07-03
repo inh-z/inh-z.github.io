@@ -1,0 +1,201 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+.phone {
+  max-width: 720px;
+  width: 100%;
+}
+/*position */
+/*常用样式*/
+.tac {
+  text-align: center;
+}
+.vta {
+  vertical-align: middle;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.clear {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*header*/
+header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 999;
+  max-width: 720px;
+  width: 100%;
+}
+header button {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  background-color: #29bde0;
+}
+header span {
+  background-image: url("img/task7-1.png");
+  display: inline-block;
+}
+header .lefticon {
+  left: 10px;
+}
+header .righticon {
+  right: 10px;
+}
+header p {
+  text-align: center;
+  color: #fff;
+  font-size: 3.4rem;
+}
+header span {
+  background-image: url(img/task7-1.png);
+  display: inline-block;
+}
+.lefticon span {
+  background-position: 0 0;
+  width: 40px;
+  height: 40px;
+}
+.righticon span {
+  width: 36px;
+  height: 36px;
+  background-position: -41px 0;
+}
+.talk {
+  margin-top: 69px;
+  height: 83px;
+  line-height: 83px;
+  background-color: #b9e9f5;
+  position: relative;
+}
+.talk p {
+  padding-left: 15px;
+  font-size: 18px;
+}
+.talk .round {
+  width: 34px;
+  height: 34px;
+  background-color: #fbb435;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  padding: 12px;
+}
+.talk .round div {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-left: 24px solid #fff;
+  border-bottom: 14px solid transparent;
+  margin-left: 7px;
+}
+.talk span {
+  background-image: none;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-style: solid;
+  overflow: hidden;
+  position: absolute;
+}
+.talk span:first-child {
+  border-width: 14px 10px;
+  border-color: #29bde0 transparent transparent transparent;
+  left: 70px;
+  bottom: -28px;
+}
+.talk span:last-child {
+  border-width: 13px 8px;
+  border-color: #b9e9f5 transparent transparent transparent;
+  left: 72px;
+  bottom: -26px;
+}
+/*main*/
+main {
+  background-color: #29bde0;
+  padding: 20px 0px ;
+  color: #fff;
+  padding-bottom: 80px;
+  margin-bottom: 110px;
+}
+main .head {
+  padding-left: 33px;
+  font-size: 16px;
+}
+main .bigbox {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+main .box {
+  width: 27vw;
+  height: 27vw;
+  display: inline-block;
+  border: solid 4px #fff;
+  max-width: 194px;
+  max-height: 194px;
+}
+main .box div:first-child {
+  height: 75%;
+  background-color: #f5c97b;
+  position: relative;
+}
+main .box div:nth-child(2) {
+  height: 25%;
+  background-color: #83b09a;
+  position: relative;
+}
+main .box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .box div:last-child {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .box div:last-child img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+.box:hover .item3 img {
+  display: block;
+}
+/*footer*/
+footer {
+  background-color: #29bde0;
+  position: fixed;
+  bottom: 0;
+  padding: 2rem 0;
+  z-index: 999;
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+}
+footer button {
+  border: none;
+  background-color: #fbb435;
+  height: 90px;
+  width: 75%;
+  font-size: 36px;
+  color: #fff;
+}

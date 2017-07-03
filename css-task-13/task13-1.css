@@ -1,0 +1,167 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+.phone {
+  max-width: 720px;
+  width: 100%;
+}
+/*position */
+/*常用样式*/
+.tac {
+  text-align: center;
+}
+.vta {
+  vertical-align: middle;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.clear {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*header*/
+header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 999;
+  max-width: 720px;
+  width: 100%;
+}
+header button {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  background-color: #29bde0;
+}
+header span {
+  background-image: url("img/task7-1.png");
+  display: inline-block;
+}
+header .lefticon {
+  left: 10px;
+}
+header .righticon {
+  right: 10px;
+}
+header p {
+  text-align: center;
+  color: #fff;
+  font-size: 3.4rem;
+}
+header p {
+  opacity: 0;
+}
+.righticon {
+  display: none;
+}
+.lefticon span {
+  background-image: url(img/task7-2.png);
+  display: block;
+  width: 34px;
+  height: 27px;
+  background-position: 0 -100px;
+  cursor: pointer;
+}
+main {
+  background-color: #f0f0f0;
+  margin-top: 57px;
+  padding: 30px 36px 20px 36px;
+}
+main div {
+  background-color: #fff;
+  border: solid 1px #f0f0f0;
+}
+main .box1 {
+  height: 116px;
+  line-height: 116px;
+  position: relative;
+}
+main .box1 p {
+  color: #9a9a9a;
+  text-align: center;
+}
+main .box1 img {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(0, -50%);
+}
+main .box2 {
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+main .box2 .special {
+  color: #fcc768;
+  border-bottom: solid 1px #fcc768;
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+  margin-bottom: 30px;
+}
+main .box2 button {
+  width: 80%;
+  background-color: #69d1e9;
+  color: #fff;
+  border: none;
+  height: 135px;
+}
+main .box2 p:not(.speciap) {
+  height: 80px;
+  line-height: 80px;
+  color: #787878;
+}
+main .box2 div {
+  display: flex;
+  width: 30%;
+  margin: auto;
+  max-width: 100px;
+}
+main .box2 div div {
+  flex: 1;
+}
+main .box2 div span {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+main .box2 img {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 375px) {
+  .box2 img {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translate(0, -50%);
+    height: 35px;
+  }
+}
+@media screen and (width: 425px) {
+  .box2 img {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translate(0, -50%);
+    height: 39px;
+  }
+}

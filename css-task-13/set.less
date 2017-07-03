@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+html{font-size: 62.5%;}
+body{max-width: 720px;width: 100%;margin: 0 auto;}
+.phone{max-width: 720px;width: 100%;}
+.bgc(@background-color:#5fc0cd){background-color: @background-color;}
+@se:#5fc0cd;
+.bgi(@rode){background-image: url(@rode);}
+/*position */
+.pos(f){position: fixed;}
+.pos(r){position: relative;}
+.pos(a){position: absolute;}
+
+.zid(@nub:999){z-index: @nub;}
+
+/*常用样式*/
+.tac{text-align: center;}
+.vta{vertical-align: middle;}
+.jcc{justify-content:center;}
+.aic{align-items:center;}
+.flt(l){float: left;}
+.flt(r){float: right;}
+.dis(i){display: inline-block;}
+.dis(b){display: block;}
+.dis(f){display: flex;}
+.fs(@font-size){font-size: @font-size;}
+.clear{content: "";clear: both;display: block;}
+.border(l,@color,@size:1px){border-left: solid @color @size;}
+.border(t,@color,@size:1px){border-top: solid @color @size;}
+.border(r,@color,@size:1px){border-right: solid @color @size;}
+.border(b,@color,@size:1px){border-bottom: solid @color @size;}
