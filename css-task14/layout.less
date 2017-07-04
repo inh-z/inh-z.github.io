@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.dis-none {
+  display: none;
+}
+.dis-flex(@justify-content) {
+  display: flex;
+  align-content: center;
+  justify-content: @justify-content;
+
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+
+    .col-sm-3 {
+       position: relative;
+       min-height: 1px;
+       padding: 3rem 2rem;
+       box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+       text-align: center;
+     }
+    .col-sm-sp {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+      text-align: center;
+    }
+    .col-sm-9 {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+      text-align: center;
+    }
+    .col-sm-6 {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+      text-align: center;
+    }
+
+    .col-md-4 {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+
+    }    /*招聘信息*/
+     /*xs招聘页面内部信息结构*/
+    .col-xs-6 {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+      float: left;
+      width: 50%;
+      overflow: hidden;
+    }   /*招聘信息第二三行*/
+    .col-xs-3 {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+      float: left;
+      width: 30%;
+      overflow: hidden;
+    }   /*招聘信息第四行*/
+    .col-xs-9 {
+      position: relative;
+      min-height: 1px;
+      padding: 0 1rem;
+      box-sizing: border-box; /*设置盒模型的宽度包括border和padding*/
+      float: left;
+      width: 70%;
+      overflow: hidden;
+    }   /*招聘信息第四行*/
+
+
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+    .col-sm-3 {
+      float: left;
+      width: 25%;
+    }
+    .col-sm-sp {
+      float: left;
+      width: 20%;
+    }
+    .col-sm-9 {
+      float: left;
+      width: 75%;
+    }
+    .col-sm-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    .col-md-4  {
+      float: left;
+      width: 33.33333%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import "public";
+@import "layout";
+body {
+  font-family: "微软雅黑", serif;
+}
+
+main {
+  padding-bottom: 10rem;
+  .container {
+
+    .slogan {
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      border-bottom: @border-color-gray solid .15rem;
+      span {
+        color: @bgc-color-green;
+      }
+    }
+    .direction {
+      padding: 2rem  0;
+      border-bottom: @border-color-gray solid .15rem;
+      span {
+        color: @text-color-gray;
+      }
+      a {
+        display: inline-block;
+        padding: 1rem ;
+        &:hover {
+          background-color: @bgc-color-green;
+          color: white;
+        }
+      }
+    }
+
+     h4 {
+      padding: 3rem 0;
+
+      border-bottom: @border-color-gray solid .15rem;
+    }
+    .row {
+
+      .col-md-4 {
+        margin-top: 3rem;
+        &:hover>.son  {
+           display: block;
+          position: absolute;
+          margin-right:15px;
+          padding:10.5rem 0 ;
+          background-color:rgba(0,0,0,0.8);
+          z-index: 10;
+          color: white;
+
+        }  /*设置点击样式*/
+        .son {
+          display:none;
+
+
+          h4 {
+            text-align: center;
+            border: none;
+          }
+          p {
+            padding: 0 2rem;
+          }
+
+
+        }    /*设置点击样式*/
+        .first {
+           .dis-flex(space-between);
+          padding: 2rem 1rem;
+          border: @border-color-gray solid .15rem;
+          p:nth-child(1) {
+            padding: 1rem 0;
+
+
+          }
+           p:nth-child(2) {
+             word-break: break-all;
+             padding-left: 1rem;
+             span {
+               display: block;
+               padding: 2rem 0;
+               font-size: 1.5rem;
+               font-weight: 600;
+
+             }
+          }
+        }
+        .second {
+          overflow: hidden;
+          span {
+            display: inline-block;
+            width: 50%;
+            padding: .5rem 0 .5rem  .5rem;
+            border: @border-color-gray solid .15rem;
+            img {
+              vertical-align: middle;
+            }
+
+          }
+        }
+        .forth {
+          overflow: hidden;
+          border-left: @border-color-gray solid .15rem;
+           .pay {
+             padding: 0 .5rem;
+             border: @border-color-gray solid .15rem;
+           }
+           .col-xs-9 {
+             .dis-flex(space-around);
+             border: @border-color-gray solid .15rem;
+
+           }
+        }
+        .fifth {
+           p {
+            padding: .5rem;
+             font-weight: 600;
+             border: @border-color-gray solid .15rem;
+             span {
+               color: red;
+             }
+           }
+        }
+        .sixth {
+          color: @text-color-gray;
+          p {
+            padding: .5rem;
+            border: @border-color-gray solid .15rem;
+          }
+        }
+      }
+    }
+
+  }
+}

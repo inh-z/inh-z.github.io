@@ -1,0 +1,191 @@
+@charset "UTF-8";
+.dis-none {
+  display: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+}
+.container .row .col-sm-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .row .col-sm-sp {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .row .col-sm-9 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .row .col-sm-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .row .col-md-4 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.container .row .col-xs-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.container .row .col-xs-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  overflow: hidden;
+}
+.container .row .col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  float: left;
+  width: 70%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container .col-sm-3 {
+    float: left;
+    width: 25%;
+  }
+  .container .col-sm-sp {
+    float: left;
+    width: 20%;
+  }
+  .container .col-sm-9 {
+    float: left;
+    width: 75%;
+  }
+  .container .col-sm-6 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .container .col-md-4 {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  font-family: "微软雅黑", serif;
+}
+main .top {
+  width: 100%;
+}
+main .container .slogan {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+main .container .slogan span {
+  color: #29af78;
+}
+main .container .row .left {
+  font-weight: 600;
+}
+main .container .row .left h4 {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  border: #edecec solid 0.1rem;
+}
+main .container .row .left .company {
+  padding: 2rem 0;
+  border: #edecec solid 0.1rem;
+}
+main .container .row .left .company p {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  color: #29af78;
+}
+main .container .row .left .company p:hover > span {
+  background-color: #f0a650;
+}
+main .container .row .left .company p span {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  margin-right: .5rem;
+  border: #f0a650 solid 0.2rem;
+  border-radius: 50%;
+  vertical-align: -6%;
+}
+main .container .row .right {
+  padding-bottom: 10rem;
+  color: #999999;
+}
+main .container .row .right .first {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: #edecec solid 0.1rem;
+}
+main .container .row .right .first img {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+}
+main .container .row .right .first p {
+  padding: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+main .container .row .right .second {
+  padding: 2rem;
+}
+main .container .row .right .second p {
+  padding-top: 2rem;
+  text-align: left;
+  text-indent: 25px;
+}
+@media (max-width: 768px) {
+  .row .right .first {
+    display: block!important;
+  }
+  .row .right .first img {
+    width: 50%!important;
+  }
+}

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+.dis-none {
+  display: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+  /*招聘信息*/
+  /*xs招聘页面内部信息结构*/
+  /*招聘信息第二三行*/
+  /*招聘信息第四行*/
+  /*招聘信息第四行*/
+}
+.container .row .col-sm-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-sm-sp {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-sm-9 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-sm-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-md-4 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+}
+.container .row .col-xs-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.container .row .col-xs-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  float: left;
+  width: 30%;
+  overflow: hidden;
+}
+.container .row .col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  float: left;
+  width: 70%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container .col-sm-3 {
+    float: left;
+    width: 25%;
+  }
+  .container .col-sm-sp {
+    float: left;
+    width: 20%;
+  }
+  .container .col-sm-9 {
+    float: left;
+    width: 75%;
+  }
+  .container .col-sm-6 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .container .col-md-4 {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  font-family: "微软雅黑", serif;
+}
+main {
+  padding-bottom: 10rem;
+}
+main .container .slogan {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  border-bottom: #edecec solid 0.15rem;
+}
+main .container .slogan span {
+  color: #29af78;
+}
+main .container .direction {
+  padding: 2rem  0;
+  border-bottom: #edecec solid 0.15rem;
+}
+main .container .direction span {
+  color: #999999;
+}
+main .container .direction a {
+  display: inline-block;
+  padding: 1rem ;
+}
+main .container .direction a:hover {
+  background-color: #29af78;
+  color: white;
+}
+main .container h4 {
+  padding: 3rem 0;
+  border-bottom: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 {
+  margin-top: 3rem;
+  /*设置点击样式*/
+  /*设置点击样式*/
+}
+main .container .row .col-md-4:hover > .son {
+  display: block;
+  position: absolute;
+  margin-right: 15px;
+  padding: 10.5rem 0 ;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+}
+main .container .row .col-md-4 .son {
+  display: none;
+}
+main .container .row .col-md-4 .son h4 {
+  text-align: center;
+  border: none;
+}
+main .container .row .col-md-4 .son p {
+  padding: 0 2rem;
+}
+main .container .row .col-md-4 .first {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  border: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 .first p:nth-child(1) {
+  padding: 1rem 0;
+}
+main .container .row .col-md-4 .first p:nth-child(2) {
+  word-break: break-all;
+  padding-left: 1rem;
+}
+main .container .row .col-md-4 .first p:nth-child(2) span {
+  display: block;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main .container .row .col-md-4 .second {
+  overflow: hidden;
+}
+main .container .row .col-md-4 .second span {
+  display: inline-block;
+  width: 50%;
+  padding: .5rem 0 .5rem  .5rem;
+  border: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 .second span img {
+  vertical-align: middle;
+}
+main .container .row .col-md-4 .forth {
+  overflow: hidden;
+  border-left: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 .forth .pay {
+  padding: 0 .5rem;
+  border: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 .forth .col-xs-9 {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  border: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 .fifth p {
+  padding: .5rem;
+  font-weight: 600;
+  border: #edecec solid 0.15rem;
+}
+main .container .row .col-md-4 .fifth p span {
+  color: red;
+}
+main .container .row .col-md-4 .sixth {
+  color: #999999;
+}
+main .container .row .col-md-4 .sixth p {
+  padding: .5rem;
+  border: #edecec solid 0.15rem;
+}

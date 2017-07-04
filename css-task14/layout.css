@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.dis-none {
+  display: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+  /*招聘信息*/
+  /*xs招聘页面内部信息结构*/
+  /*招聘信息第二三行*/
+  /*招聘信息第四行*/
+  /*招聘信息第四行*/
+}
+.container .row .col-sm-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-sm-sp {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-sm-9 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-sm-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  text-align: center;
+}
+.container .row .col-md-4 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+}
+.container .row .col-xs-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.container .row .col-xs-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  float: left;
+  width: 30%;
+  overflow: hidden;
+}
+.container .row .col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  /*设置盒模型的宽度包括border和padding*/
+  float: left;
+  width: 70%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container .col-sm-3 {
+    float: left;
+    width: 25%;
+  }
+  .container .col-sm-sp {
+    float: left;
+    width: 20%;
+  }
+  .container .col-sm-9 {
+    float: left;
+    width: 75%;
+  }
+  .container .col-sm-6 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .container .col-md-4 {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

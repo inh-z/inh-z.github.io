@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "public";
+@import "layout";
+body {
+  font-family: "微软雅黑", serif;
+}
+main {
+  .top {
+
+    width: 100%;
+  }
+
+  .container {
+
+    .slogan {
+      padding: 1rem;
+      font-size: 1.5rem;
+      span {
+        color: @bgc-color-green;
+      }
+    }
+    .row {
+      .left {
+         font-weight: 600;
+        h4 {
+          padding: 1rem 0;
+          font-size: 1.6rem;
+          border: @border-color-gray solid .1rem;
+        }
+        .company {
+          padding: 2rem 0;
+          border: @border-color-gray solid .1rem;
+          p {
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            color: @bgc-color-green;
+            &:hover>span {
+              background-color: #f0a650;
+            }
+            span {
+              display: inline-block;
+              width: .8rem;
+              height: .8rem;
+              margin-right: .5rem;
+              border: #f0a650 solid 0.2rem;
+              border-radius: 50%;
+              vertical-align:-6%;
+            }
+          }
+        }
+
+      }
+
+      .right {
+        padding-bottom: 10rem;
+        color: @text-color-gray;
+        .first {
+          .dis-flex(space-between);
+          padding: 1rem;
+          border: @border-color-gray solid .1rem;
+          img {
+            display: inline-block;
+            width: 30%;
+            height: auto;
+          }
+          p {
+            padding: 3rem;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .second {
+          padding: 2rem;
+           p {
+             padding-top: 2rem;
+             text-align: left;
+             text-indent: 25px;
+
+           }
+        }
+      }
+    }
+
+  }
+
+}
+@media (max-width:768px) {
+   .row {
+     .right {
+       .first {
+         display: block!important;
+         img {
+           width: 50%!important;
+         }
+       }
+     }
+   }
+
+}
