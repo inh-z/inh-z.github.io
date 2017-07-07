@@ -262,6 +262,10 @@ footer .down {
     z-index: 3 ;
     display: block;
   }
+  header nav ul:hover{
+    z-index :3 ;
+    display : block;
+  }
   header nav button span {
     display: block;
     width: 2.5rem;
