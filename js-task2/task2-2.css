@@ -1,0 +1,109 @@
+@charset "UTF-8";
+html{font-size: 10px;}
+body{
+	width: 100%;
+	max-width: 720px;
+	margin:0 auto;
+	font-size: 1.7rem
+}
+header{
+	background-color: #29bde0;
+	position: fixed;
+	top: 0;
+	padding: 20px 0; 
+	z-index: 999;
+	width: 100%;
+	max-width: 720px;
+}
+header button{
+	border: none;
+	background: #29bde0;
+	margin-left: 22px;
+}
+header span{
+	background-image: url(img/return.png);
+	display: block;
+	width: 34px;
+	height: 27px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+main{
+	background-color: #f0f0f0;
+	margin-top: 74px;
+	padding: 5px 10px 60px 10px;
+	text-align: center;
+}
+main>div>div{
+	overflow: hidden;
+	 box-shadow:0 0 1px #9fa5a2;
+	 background-color: #fff;  
+}
+main button{
+	width: 100%;
+	color: #fff;
+	background-color: #ffc107;
+	border:none;
+	padding: 3%;
+	font-size: 2rem;
+}
+.set{
+	text-align: initial;
+	padding: 5% 3% 15% 3%;
+}
+.set>div{
+	float: left;
+	width: 50%;
+}
+.icons>span:first-child{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-color: #607D8B;
+	border-radius: 50%;
+	padding: 1%;
+	margin-right: 5%;
+}
+.iconleft>span:first-child{
+	background-image: url(img/6.png);
+}
+.iconright>span:first-child{
+	background-image: url(img/8.png);
+}
+.icons span:first-child,.icons span:last-child{vertical-align: middle;}
+.content{
+	padding: 20% 3% 15% 3%;
+}
+.content label span:first-child{
+	font-weight: 700;
+}
+/* .content label input{
+	color: #ffc107;
+	width: 20px;
+	border:none;
+}
+.content label input:focus{
+	color: #ffc107;
+	border:none;
+	background-color: #f0f0f0;
+	outline: none;
+} */
+.content label span:last-of-type{
+	color: #ffc107;
+}
+.content label input{
+	width: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #00bcd4;
+    text-shadow: 0px 0px 0px #ffc107;
+    -webkit-text-fill-color: transparent;
+}
+
+.content label input::-webkit-input-placeholder{
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
