@@ -71,7 +71,7 @@ btn.onclick=function(){
 			document.getElementById('status1').style.opacity=1;
 			document.getElementById('continue').innerHTML='查看身份';
 			document.getElementById('status2').innerHTML=judjeId();
-			document.getElementById('continue').innerHTML='隐藏并传递给'+'j'+'号';
+			document.getElementById('continue').innerHTML='隐藏并传递给'+j+'号';
 		}
 	}
 	else{
