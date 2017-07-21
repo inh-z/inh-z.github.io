@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@charset "UTF-8";
+body{
+	font-size: 62.5%;
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	padding-bottom: 300px;
+}
+header{
+	height: 90px;
+	line-height: 90px;
+	padding: 10px 0 ;
+	background-color: #29bde0;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 720px;
+	border-bottom: solid 1px #fff;
+	z-index: 999;
+}
+header p{
+	font-size: 24px;
+	text-align: center;
+}
+header button{
+	border: none;
+}
+
+.leftbtn span{
+	width: 51px;
+	height: 42px;
+	background-position: -42px 0;
+	display: block;
+}
+.rightbtn span{
+	width: 40px;
+	height: 44px;
+	background-position: 0 0;
+	display: block;
+}
+.leftbtn{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform:translate(0,-50%);
+	background-color: #29bde0;
+}
+.rightbtn{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform:translate(0,-50%);
+	background-color: #29bde0;
+}
+main{
+	margin-top: 110px;
+	background-color: #29bde0;
+	padding: 0 70px;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 20px;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.text{
+	font-size: 55px;
+	font-weight: 600;
+	color: #ffc865;
+	margin-bottom: 60px;
+}
+.sectext p, .sectext li{
+	font-size: 18px;
+	text-align: left;
+}
+.sectext ul{
+	text-align: left;
+}
+.sectext li{
+	width: 30%;
+	display: inline-block;
+
+}
+.content{
+	padding: 0 70px; 
+}
+.content div{
+	border-bottom: solid 1px #dddddd;
+}
+.detail p{color: #bcbcbc;font-size: 26px;}
+.special{padding-bottom: 20px;}
+.lefts{
+	font-size: 30px;
+	color: #515151;
+	background-image: none;
+}
+div .detail-top{
+	border: none;
+	position: relative;
+}
+.rights{
+	font-size: 20px;
+	color: #d9d9d9;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform:translate(0,-50%);
+	background-image: none;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 720px;
+	z-index: 999;
+	padding: 1% 0;
+	//background-color: #99dff0;
+	background-color:rgba(153,223,240,0.5);
+}
+footer button{
+	width: 40%;
+	border:none;
+	height: 86px;
+	color: #fff;
+	font-size: 20px;
+}
+.btn1{
+	margin-right: 9%;
+	background-color: #f66f6f;
+}
+.btn2{
+	margin-left: 9%;
+	background-color: #fbb435;
+}
+.specials{
+	margin-bottom: 137px;
+}
+

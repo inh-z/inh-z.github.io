@@ -1,0 +1,92 @@
+@charset "UTF-8";
+html{font-size: 10px;}
+body{
+	width: 100%;
+	max-width: 720px;
+	margin:0 auto;
+}
+header{
+	background-color: #29bde0;
+	position: fixed;
+	top: 0;
+	padding: 10px 0; 
+	z-index: 999;
+	width: 100%;
+	max-width: 720px;
+}
+header button{
+	border: none;
+	background: #29bde0;
+	//margin-left: 22px;
+	position: absolute;
+	top: 50%;
+	transform:translate(0,-50%);
+	cursor: pointer;
+}
+header span{
+	background-image: url(img/task3.png);
+	display: block;
+	background-repeat: no-repeat;
+	//background-size: contain;
+}
+#back{left: 24px;}
+#close{right: 24px;}
+.cat1{
+	width: 24px;
+	height: 44px;
+	background-position: 0 0 ;
+}
+.cat2{
+	width: 36px;
+	height: 36px;
+	background-position: -26px 0 ;
+}
+header p{
+	color: #fff;
+	text-align: center;
+	font-size: 34px;
+}
+
+main{
+	margin-top: 11.1rem;
+	background-color: #29bde0;
+	padding-top: 60px;
+	text-align: center;
+	border-top: solid 1px #fff;
+}
+main>div{
+	width: 50%;
+	margin: 0 auto;
+	border: solid 6px #fff;
+	background-color: #ffedc5;
+	padding: 15% 5% 5% 5%;
+	text-align: center;
+	position: relative;
+}
+.round{
+	border: solid 2px #ffedc5;
+	background-color: #fff;
+	color: #f56b81 ;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 26px;
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%,0);
+	top: 0;
+	margin-top: -30px;
+}
+main img{max-width: 70%;}
+main button{
+	border: none;
+	width: 75%;
+	background-color: #fbb435;
+	color: #fff;
+	font-size: 24px;
+	margin: 25px 0;
+	padding: 2% 0;
+}
+main p{color: #29bde0;font-size: 24px;opacity: 0;}

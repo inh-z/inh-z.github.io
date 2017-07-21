@@ -1,0 +1,116 @@
+@charset "UTF-8";
+html{font-size: 10px;}
+body{
+	width: 100%;
+	max-width: 720px;
+	margin:0 auto;
+}
+header{
+	background-color: #29bde0;
+	position: fixed;
+	top: 0;
+	padding: 10px 0; 
+	z-index: 999;
+	width: 100%;
+	max-width: 720px;
+}
+header button{
+	border: none;
+	background: #29bde0;
+	//margin-left: 22px;
+	position: absolute;
+	top: 50%;
+	transform:translate(0,-50%);
+	cursor: pointer;
+}
+header span{
+	background-image: url(img/task3.png);
+	display: block;
+	background-repeat: no-repeat;
+	//background-size: contain;
+}
+#back{left: 24px;}
+#close{right: 24px;}
+.cat1{
+	width: 24px;
+	height: 44px;
+	background-position: 0 0 ;
+}
+.cat2{
+	width: 36px;
+	height: 36px;
+	background-position: -26px 0 ;
+}
+header p{
+	color: #fff;
+	text-align: center;
+	font-size: 34px;
+}
+
+main{
+	margin-top: 11.1rem;
+	padding-top: 30px;
+	border-top: solid 1px #fff;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+.dayNumber>p,.dayNumber>ul{
+	border: solid 1px #c9c9c9;
+	color: #5fcee8;
+	background-color: #fff;
+	position: relative;
+	margin-top: 15px;
+	cursor: pointer;
+	width: 80%;
+	margin: 15px auto 0 auto;
+}
+.dayNumber ul{
+	list-style: none;
+	padding: 0;
+}
+.dayNumber>p{
+	font-size: 26px;
+	padding: 2% 0;
+}
+.dayNumber img{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform:translate(0,-50%);
+}
+li{
+	width: 80%;
+	margin: 5% auto;
+	background-color: #24a7c6;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+ul>li>p{font-size: 20px;background-color: red;color: #ffeb3b;}
+
+
+footer{
+	width: 100%;
+	max-width: 720px;
+	z-index: 999;
+	padding: 4% 0;
+	//background-color: #99dff0;
+	background-color:rgba(153,223,240,0.5);
+}
+footer button{
+	width: 40%;
+	border:none;
+	padding: 3% 0;
+	color: #fff;
+	font-size: 20px;
+	
+}
+.btn1{
+	margin-right: 9%;
+	background-color: #f66f6f;
+
+}
+.btn2{
+	margin-left: 9%;
+	background-color: #fbb435;
+}
