@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>TEST</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+    .active{color:red;font-weight: bold;}
+</style>
+</head>
+<!-- 一个页面只能有一个ng-app，定义应用 -->
+<body ng-app='helloworld'>
+
+    <!-- ui-sref——————是一个指令，引用一个状态 -->
+    <!-- 添加一些ui-sref链接 点击后，链接将激活一个状态。 -->
+    <!-- ui-sref-active—————— 查看当前激活状态并设置 Class -->
+    <a ui-sref='hello' ui-sref-active='active'>Hello</a>
+    <a ui-sref='about' ui-sref-active='active'>About</a>
+
+
+    <!-- 展示——————视口 -->
+    <!-- 当状态（statue）被激活（active）时，状态的视图template:将被加载到视口中。 -->
+    <ui-view></ui-view>   
+
+
+    <!-- 引入顺序：angular、ui-router、自己的js文件 -->
+	<script src='angular-1.5.8.js'></script>
+    <script src='angular-ui-router.js'></script>
+    <script src='test.js'></script>
+
+
+</body>
+</html>
+
+
+
+
+
+//创建一个Angular模块（注册模块的过程）————myApp（是主要模块）
+//，并依赖注入ui.router模块
+//第一个是模板名（即应用名ng-app），第二个是依赖注入列表（数组）
+//需要注意的是这里的是 ui.router，而不是 ui-router
+//注册模板的方式有两种，第一种如下，这种方法注册的模板，
+//angularjs机制会新建一个模板，归根结底是不同的模版
+
+var myApp = angular.module('helloworld' , ['ui.router']);
+
+//第二种是：var myApp = angular.module("helloworld");  
+//如果应用程序中有了这个模板，那么就返回这个模板一样配置的模板，
+//要注意的是，他们是同一个模板
+
+
+
+//实例化的模块有一个config的方法，通过它可以在模块跑起来之前做一些
+//配置性工作，路由设置什么的就是在config中完成的。
+//config支持依赖注入（例如下面注入了$statueProvider），
+//但是只有provider和 constants是可以被注入进去的，其他的不可以。
+
+//还可以把 $locationProvider也注入进来，逗号分隔
+// 把 $locationProvider加进来的目的主要是希望在高级浏览器上是以html5Mode更改URL，
+// 并且针对于IE8 9 这样的不支持的设置hashPrefix为“!”（默认html5Mode是false hashPrefix是''）。
+
+//$urlRouterProvider这个用处貌似是在没有匹配路由时，跳转默认路径
+
+myApp.config(function($stateProvider,$urlRouterProvider){
+
+
+//配置路由状态的另一种写法
+//myApp.config(['$stateProvider',function($stateProvider){
+//	......
+//}]);
+
+
+//config方法    固定写法就是 app.config(function(){...})
+//AngularJS模块可以在被加载和执行之前对模块自身进行配置。
+//当你需要在AngularJS模块加载之前进行配置，就要用到config。
+//只有提供者(Provider)和常量(constant)才能注入到config中。
+
+
+//$statueProvider在配置块中注册了两个状态
+
+
+
+//状态是UI路由器应用程序的基本构建块。这个javascript对象是一个简单的状态定义。
+	var helloState = {
+		//name和url并没有必须相同这一说法，是不同的两个东西
+		//这里的name对应的是ui-sref里的东西
+		name:'hello',
+		//当状态为活动状态时，浏览器的网址将会是/hello。
+		url:'/hello',
+		//该template:字符串定义状态的视图。当状态为活动状态时，此视图将被加载到视口中。
+		//还可以使用templateUrl，对应的值是html片段，例如：templateUrl:'artical.html'
+		template:'<h3>hello world!</h3>'
+	};
+	var aboutState = {
+		name:'about',
+		url:'/about',
+		template:'<h3>ITs the UI-Router hello world app!</h3>'
+	};
+
+	$urlRouterProvider.otherwise('/hello');
+
+	$stateProvider.state(helloState);
+	$stateProvider.state(aboutState);
+});
+
+
+/*另一种写法就是：
+var myApp = angular.module('helloworld' , ['ui.router']);
+myApp.config(function($stateProvider){
+	$stateProvider
+		//.state里的第一个参数对应ui-sref
+		.state('hello',{
+			url:'/hello',
+			template:'<h3>hello world!</h3>'
+		})
+		.state('about',{
+			url:'/about',
+			template:'<h3>ITs the UI-Router hello world app!</h3>'
+		})
+
+
+
+		//一个子路由且需要传递参数的例子：
+		//state可以嵌套，state名必须唯一，通过state名中的点来划分Parent/child层次。
+		//格式为：父View.子View
+		//下面的例子是 hello.son， 前提是 
+		//hello里的 template里要有<a ui-sref='...'>...</a>和<ui-view></ui-view>
+		.state('hello.son',{
+
+			// ?后边接传递的参数，如果参数有多个，用 & 连接
+			url:'/list?page&type',
+
+			// params 开始以为是用来传参的，然而。。。
+			//params是在目标界面定义要接受的参数
+			params:{'page':null,'type':null},
+			
+			//params 和 data之间的区别：
+			//定义在 parent state 上的 data，child state 可以继承
+			//params的作用是定义一个 state 的子路由，但不反应在 URL 中，
+			//需要在调用的时候传入 {param: xxx} 来访问
+			//因此，data 是用于在父子路由间传输数据，
+			//而 params 是定义子路由的访问方式。两者的用处是有本质不同的
+
+			//还可以为路由定义控制器
+			controller:'someThing',
+			//如果还要嵌套子路由的话，继续用.连接，然后继续在template中加a标签和ui-view
+			template:'<h1>Good job!</h1>'
+		})
+	});
+*/
+
+
+
+
+
+/*
+							var myApp = angular.module("myApp", ['ui.router','oc.lazyLoad']);
+myApp.config(function ($stateProvider, $urlRouterProvider) {
+//懒加载
+   var _lazyLoad = function (loaded) {
+return function ($ocLazyLoad) {
+return $ocLazyLoad.load(loaded, {serie: true});
+       }
+};
+   $urlRouterProvider.when("", "/main");
+   $stateProvider
+.state('main', {
+//默认显示登录页面
+           url: '/main',
+           templateUrl: 'tpls/main.html',
+           resolve: {
+loadMyFile: _lazyLoad(
+//懒加载登录的js和css文件
+                   ['css/main.css']
+)
+}
+})
+*/
+
+
+
+
+
+
+
+
+在 Angularjs 中 ui-sref 和 $state.go 如何传递参数   http://www.cnblogs.com/jager/p/5293225.html
+
+
+
+
